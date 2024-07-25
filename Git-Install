@@ -15,3 +15,27 @@ Como instalar git:
           >  ssh-add id_ed25519
 3- Agregar ssh a github
 4- Validar ssh
+------ Pasos para sincronizar git local con git remoto-----
+
+1- Agregar tu usuario y tu correo
+
+git config --global user.name "cgsilveriot"
+git config --global user.email cgsilveriot@coltomex.com
+
+2- Clonar un archivo:
+git clone git@github.com:cgsilveriot3/Documentacion.git
+
+2.1 Agregar el repo remoto:
+ git remote add origin https://github.com/cgsilveriot3/Test_1.git
+
+3- agregar todos los archivos:
+git add .
+
+4- Preparar tus cambios:
+ git commit -m "Comentario"
+
+5- enviar tus cambios a la rama remota:
+git push origin master
+
+6- Sincronizar cambios en la rama local con la remota:
+git pull origin master
