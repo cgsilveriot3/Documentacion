@@ -1,0 +1,17 @@
+Como instalar git:
+
+1- Descargar git e instalar
+2- Configurar ssh ne la maquina:
+    2.1- Genera clave ssh en la maquina
+        ssh-keygen -t ed25519 -C "cgsilveriot@coltomex.com"
+
+    2.2- Agregar gen ssh a la maquina
+           ------ En power-shell en admin ---
+           > Get-Service -Name ssh-agent | Set-Service -StartupType Manual
+           > Start-Service ssh-agent
+    2.3 Add gen 
+          ----- En power-shell sin ser admin ------
+          - Se puede agregar con la ruta o pocisionarser en la ruta y de ahi agregar el archivo
+          >  ssh-add id_ed25519
+3- Agregar ssh a github
+4- Validar ssh
